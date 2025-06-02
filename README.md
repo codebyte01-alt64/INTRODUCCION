@@ -1,3 +1,0 @@
-Introducción 
-
-Mi primer codigo
