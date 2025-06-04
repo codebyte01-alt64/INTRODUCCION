@@ -55,6 +55,63 @@ print(3 < 4 or "Hola" > "Python") # OR lógico: Imprime True porque 3 es menor q
 print(3 > 4 or "Hola" < "Python") ## OR lógico: Imprime False porque 3 no es mayor que 4 y "Hola" no es menor que "Python"
 print(not (3 < 4))  # NOT lógico: Imprime False porque 3 es menor que 4, y negarlo da False
 
+# ==========================
+# OPERADORES LÓGICOS EN PYTHON
+# ==========================
+
+# Los operadores lógicos se usan para combinar condiciones.
+# Devuelven True o False dependiendo de si se cumple la condición lógica.
+
+print("=== Operador AND (y) ===")
+# Solo devuelve True si ambas condiciones son verdaderas
+print("True and True =", True and True)   # True
+print("True and False =", True and False) # False
+print("5 > 2 and 10 > 3 =", 5 > 2 and 10 > 3) # True
+print("5 > 2 and 1 > 3 =", 5 > 2 and 1 > 3)   # False
+
+print("\n=== Operador OR (o) ===")
+# Devuelve True si al menos UNA condición es verdadera
+print("True or False =", True or False)   # True
+print("False or False =", False or False) # False
+print("5 > 10 or 3 < 4 =", 5 > 10 or 3 < 4)   # True
+print("5 > 10 or 3 > 4 =", 5 > 10 or 3 > 4)   # False
+
+print("\n=== Operador NOT (no) ===")
+# Invierte el valor de una condición: True se convierte en False, y viceversa
+print("not True =", not True)     # False
+print("not False =", not False)   # True
+print("not (5 > 2) =", not (5 > 2))   # False
+print("not (5 < 2) =", not (5 < 2))   # True
+
+# ==========================
+# EJEMPLO PRÁCTICO
+# ==========================
+
+edad = 20
+tiene_identificacion = True
+
+# ¿Puede entrar a la discoteca?
+puede_entrar = edad >= 18 and tiene_identificacion
+
+print("\n¿Puede entrar a la discoteca?")
+print("Edad:", edad)
+print("Tiene identificación:", tiene_identificacion)
+print("Resultado:", puede_entrar)  # True
+
+# Prueba con otra condición
+edad = 16
+tiene_identificacion = False
+
+puede_entrar = edad >= 18 and tiene_identificacion
+
+print("\n¿Puede entrar a la discoteca con otra edad?")
+print("Edad:", edad)
+print("Tiene identificación:", tiene_identificacion)
+print("Resultado:", puede_entrar)  # False
+
+# ==========================
+# FIN DEL EJEMPLO
+# ==========================
 
 
 
