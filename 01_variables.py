@@ -127,3 +127,117 @@ address = 25  # Asignamos un valor entero a la variable address, lo que sobrescr
 
 print("Su dirección es:", address)  # Imprime el valor de la variable address, que ahora es un entero
 
+
+# ==========================
+# RESUMEN DE VARIABLES EN PYTHON
+# ==========================
+
+# ==========================
+# VARIABLES EN PYTHON (DESDE CERO)
+# ==========================
+
+# ¿Qué es una variable?
+# Una variable es un nombre que almacena un valor.
+# Piensa en ella como una "caja" donde puedes guardar información.
+
+# ==========================
+# 🟢 1. Crear variables
+# ==========================
+
+nombre = "Ana"
+edad = 25
+altura = 1.68
+es_estudiante = True
+
+# Mostramos los valores en pantalla
+print("Nombre:", nombre)
+print("Edad:", edad)
+print("Altura:", altura)
+print("¿Es estudiante?:", es_estudiante)
+
+# ==========================
+# 🔵 2. Tipos de datos básicos
+# ==========================
+
+# str → texto (string)
+mensaje = "Hola mundo"
+
+# int → número entero
+numero = 10
+
+# float → número con decimales
+precio = 9.99
+
+# bool → valor booleano (verdadero o falso)
+activo = False
+
+print("\nTipos de datos:")
+print("mensaje:", mensaje, "| tipo:", type(mensaje))
+print("numero:", numero, "| tipo:", type(numero))
+print("precio:", precio, "| tipo:", type(precio))
+print("activo:", activo, "| tipo:", type(activo))
+
+# ==========================
+# 🟠 3. Reasignar valores
+# ==========================
+
+# Podemos cambiar el valor de una variable cuando queramos
+edad = 30
+nombre = "Carlos"
+
+print("\nValores modificados:")
+print("Nuevo nombre:", nombre)
+print("Nueva edad:", edad)
+
+# ==========================
+# 🟣 4. Concatenación y uso en textos
+# ==========================
+
+# Podemos usar variables dentro de frases
+saludo = "Hola " + nombre + ", tienes " + str(edad) + " años."
+print("\n" + saludo)
+
+# También con f-strings (forma moderna y fácil)
+saludo_moderno = f"Hola {nombre}, tu edad actual es {edad} años."
+print(saludo_moderno)
+
+# ==========================
+# 🔴 5. Buenas prácticas al nombrar variables
+# ==========================
+
+# ✔️ Usa nombres descriptivos y en minúsculas
+usuario_nombre = "Lucía"
+producto_precio = 15.5
+
+# ❌ No uses espacios, acentos ni símbolos
+# nombre usuario ❌
+# edad@ ❌
+# número-teléfono ❌
+
+# ✔️ Usa snake_case (guiones bajos entre palabras)
+total_pagar = 150
+
+print("\nNombre del usuario:", usuario_nombre)
+print("Precio del producto:", producto_precio)
+print("Total a pagar:", total_pagar)
+
+# ==========================
+# 🔘 6. Ejemplo práctico
+# ==========================
+
+producto = "Café"
+cantidad = 3
+precio_unitario = 2.5
+total = cantidad * precio_unitario
+
+print(f"\nHas comprado {cantidad} {producto}(s).")
+print(f"Precio unitario: ${precio_unitario}")
+print(f"Total a pagar: ${total}")
+
+# ==========================
+# 🏁 Fin del archivo
+# ==========================
+
+# Este archivo es perfecto para empezar con variables en Python.
+# Ejecuta este código en Visual Studio Code presionando: Ctrl + F5
+# o usando la terminal con: python variables_en_python.py
